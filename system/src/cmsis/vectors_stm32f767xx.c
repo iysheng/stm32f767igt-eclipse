@@ -29,6 +29,7 @@
 // ----------------------------------------------------------------------------
 
 #include "cortexm/ExceptionHandlers.h"
+#include "os.h"
 
 // ----------------------------------------------------------------------------
 
@@ -275,7 +276,7 @@ pHandler __isr_vectors[] =
   {
     // Cortex-M Core Handlers
     (pHandler) &_estack,               // The initial stack pointer
-    Reset_Handler,                     // The reset handler
+		Reset_Handler,                     // The reset handler
 
     NMI_Handler,                       // The NMI handler
     HardFault_Handler,                 // The hard fault handler
@@ -300,8 +301,8 @@ pHandler __isr_vectors[] =
     0,                                 // Reserved
 #endif
     0,                                 // Reserved
-    PendSV_Handler,                    // The PendSV handler
-    SysTick_Handler,                   // The SysTick handler
+	OS_CPU_PendSVHandler,                    // The PendSV handler
+	OS_CPU_SysTickHandler,                   // The SysTick handler
 
     // ----------------------------------------------------------------------
     // External Interrupts

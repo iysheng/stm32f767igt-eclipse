@@ -599,6 +599,7 @@ DebugMon_Handler (void)
 
 #endif
 
+/*
 void __attribute__ ((section(".after_vectors"),weak))
 PendSV_Handler (void)
 {
@@ -608,7 +609,8 @@ PendSV_Handler (void)
   while (1)
     {
     }
-}
+}*/
+/*
 
 void __attribute__ ((section(".after_vectors"),weak))
 SysTick_Handler (void)
@@ -617,5 +619,5 @@ SysTick_Handler (void)
   // Useful in case someone (like STM HAL) inadvertently enables SysTick.
   ;
 }
-
+*/
 // ----------------------------------------------------------------------------

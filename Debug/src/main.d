@@ -1,5 +1,4 @@
-src/main.o: ../src/main.c ../system/include/diag/Trace.h \
- ../system/include/stm32f7-hal/stm32f7xx_hal.h \
+src/main.o: ../src/main.c ../system/include/stm32f7-hal/stm32f7xx_hal.h \
  ../include/stm32f7xx_hal_conf.h \
  ../system/include/stm32f7-hal/stm32f7xx_hal_rcc.h \
  ../system/include/stm32f7-hal/stm32f7xx_hal_def.h \
@@ -72,9 +71,28 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
  ../system/include/stm32f7-hal/stm32f7xx_hal_dfsdm.h \
  ../system/include/stm32f7-hal/stm32f7xx_hal_dsi.h \
  ../system/include/stm32f7-hal/stm32f7xx_hal_jpeg.h \
- ../system/include/stm32f7-hal/stm32f7xx_hal_mdios.h
-
-../system/include/diag/Trace.h:
+ ../system/include/stm32f7-hal/stm32f7xx_hal_mdios.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-CPU\ARM-Cortex-M4\GNU/cpu.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-CPU/cpu_def.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/cpu_cfg.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_math.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-CPU/cpu_core.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_def.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_mem.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/lib_cfg.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_str.h \
+ D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_ascii.h \
+ D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_cfg.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_cfg_app.h \
+ D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os_type.h \
+ D:\Apollo\neon\ucosiii-e\src\uCOS-III\Ports\ARM-Cortex-M\ARMv7-M\GNU/os_cpu.h \
+ D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os_trace.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_app_hooks.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/app_cfg.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp_led.h \
+ D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp_clock.h
 
 ../system/include/stm32f7-hal/stm32f7xx_hal.h:
 
@@ -225,3 +243,45 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
 ../system/include/stm32f7-hal/stm32f7xx_hal_jpeg.h:
 
 ../system/include/stm32f7-hal/stm32f7xx_hal_mdios.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-CPU\ARM-Cortex-M4\GNU/cpu.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-CPU/cpu_def.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/cpu_cfg.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_math.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-CPU/cpu_core.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_def.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_mem.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/lib_cfg.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_str.h:
+
+D:\Apollo\neon\ucosiii-e\src\uC-LIB/lib_ascii.h:
+
+D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_cfg.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_cfg_app.h:
+
+D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os_type.h:
+
+D:\Apollo\neon\ucosiii-e\src\uCOS-III\Ports\ARM-Cortex-M\ARMv7-M\GNU/os_cpu.h:
+
+D:\Apollo\neon\ucosiii-e\src\uCOS-III\Source/os_trace.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/os_app_hooks.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-CONFIG/app_cfg.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp_led.h:
+
+D:\Apollo\neon\ucosiii-e\src\UCOS-BSP/bsp_clock.h:

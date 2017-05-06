@@ -13,6 +13,15 @@ RM := rm -rf
 -include system/src/diag/subdir.mk
 -include system/src/cortexm/subdir.mk
 -include system/src/cmsis/subdir.mk
+-include src/uCOS-III/Source/subdir.mk
+-include src/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/subdir.mk
+-include src/uC-LIB/Ports/ARM-Cortex-M4/GNU/subdir.mk
+-include src/uC-LIB/subdir.mk
+-include src/uC-CPU/Cache/ARM/armv7m_generic_l1/subdir.mk
+-include src/uC-CPU/ARM-Cortex-M4/GNU/subdir.mk
+-include src/uC-CPU/subdir.mk
+-include src/UCOS-CONFIG/subdir.mk
+-include src/UCOS-BSP/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -32,6 +41,9 @@ ifneq ($(strip $(CXX_DEPS)),)
 endif
 ifneq ($(strip $(ASM_DEPS)),)
 -include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
 endif
 ifneq ($(strip $(S_UPPER_DEPS)),)
 -include $(S_UPPER_DEPS)
@@ -79,7 +91,7 @@ ucosiii-e.siz: ucosiii-e.elf
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) ucosiii-e.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) ucosiii-e.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)
